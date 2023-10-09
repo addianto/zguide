@@ -10,7 +10,7 @@ jobs:
       - name: Checkout the repository
         uses: actions/checkout@v4
       - name: Install & cache APT packages
-        uses: awalsh128/cache-apt-pkgs-actions@v1.3.0
+        uses: awalsh128/cache-apt-pkgs-action@v1.3.0
         with:
           packages: dbtoepub docbook-utils inkscape pstoedit
       - name: Run the build script
