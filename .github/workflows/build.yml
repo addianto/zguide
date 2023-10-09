@@ -12,7 +12,7 @@ jobs:
       - name: Install & cache APT packages
         uses: awalsh128/cache-apt-pkgs-action@v1.3.0
         with:
-          packages: dbtoepub docbook-utils inkscape pstoedit
+          packages: dbtoepub docbook-utils inkscape libbatik-java pstoedit python3-pygments
       - name: Run the build script
         run: ./bin/buildpdfs
       - name: Upload the generated PDF and ePUB files as a build artifact
